@@ -14,8 +14,8 @@
 
 typedef struct HTTP {
 	char *host;
-	int32_t len;
-	int32_t cap;
+	int32_t len; // Сколько функций используется (длина)
+	int32_t cap; // Объем
 	void(**funcs)(int, HTTPreq*);
 	HashTab *tab;
 } HTTP;

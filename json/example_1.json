@@ -1,22 +1,39 @@
-{"coord":
-    {"lon":82.93,"lat":55.04},
-    "weather":[{"id":801,
-        "main":"Clouds",
-        "description":"few clouds",
-        "icon":"02d"}],
-        "base":"stations",
-        "main":
-        {"temp":29,
+{
+    "coord":
+    {
+        "lon":82.93,
+        "lat":55.04},
+        "weather":
+        [{
+            "id":801,
+            "main":"Clouds",
+            "description":"few clouds",
+            "icon":"02d"}],
+            "base":"stations",
+            "main":
+        {   
+            "temp":29,
             "feels_like":26.33,
-            "temp_min":29,
+            "temp_min":36,
             "temp_max":29,
             "pressure":996,
             "humidity":42},
             "visibility":10000,
             "wind":
-            {"speed":6,
-                "deg":180},
+            {
+                "speed":6,
+                "deg":180
+            },
                 "clouds":{
                     "all":11},
                     "dt":1597229809,
-                    "sys":{"type":1,"id":8958,"country":"RU","sunrise":1597186643,"sunset":1597241364},"timezone":25200,"id":1496747,"name":"Novosibirsk","cod":200}
+                    "sys":{
+                        "type":1,
+                        "id":8958,
+                        "country":"RU",
+                        "sunrise":1597186643,
+                        "sunset":1597241364},
+                        "timezone":25200,
+                        "id":1496747,
+                        "name":"Novosibirsk",
+                        "cod":200}

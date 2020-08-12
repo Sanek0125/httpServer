@@ -25,12 +25,19 @@ int example_1_entry(int argc, char **argv) {
 
     for(uint32_t i = 0; i < buffer_size; i++)
     {
-        if(!strncmp(json_data + i, "\"temp_min\": ", strlen("\"temp_min\": ")))
-        {
-            char *tmp;
-            strtok(json_data + i, " ");
-            tmp = strtok(NULL, ",");
-            printf("%s\r\n", tmp);
+        if(!strncmp(json_data + i, "\"temp_min\"", strlen("\"temp_min\"")))
+        {   
+            char *tmp_min;
+            strtok(json_data + i, ":");
+            tmp_min = strtok(NULL, ",");
+            printf("%s\r\n", tmp_min);
+        }
+        if(!strncmp(json_data + i, "\"temp_max\"", strlen("\"temp_max\"")))
+        {   
+            char *tmp_max;
+            strtok(json_data + i, ":");
+            tmp_max = strtok(NULL, ",");
+            printf("%s\r\n", tmp_max);
             // printf("start parsing\r\n");
             // for(uint32_t j = i + strlen("\"company\": "); j < buffer_size; j++)
             // {

@@ -7,7 +7,7 @@ void index_page(int conn, HTTPreq *req); // выгрузка html файла; co
 void about_page(int conn, HTTPreq *req);
 
 int main(void) {
-	HTTP *serve = new_http("127.0.0.1:7545");
+	HTTP *serve = new_http("0.0.0.0:8080");
 
 	handle_http(serve, "/", index_page); // обработка
 	handle_http(serve, "/about/", about_page); 
